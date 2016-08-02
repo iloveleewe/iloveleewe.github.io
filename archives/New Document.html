@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MarkdownPad Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>我就试试不说话</h1>
+<h2>学习新技能还是挺好玩的撒</h2>
+<h3>主题三：哈哈哈</h3>
+<p>只有二级标题有[下划线]（#gvhbjnk）？</p>
+<pre><code>我日这个空格加上table就是框框
+</code></pre>
+
+<blockquote>
+<p><strong>我是粗体</strong> </p>
+<p>xihdfasdfa dfadfad<a href="&#x6d;&#x61;&#105;l&#116;&#111;&#58;s&#x68;&#105;&#x64;&#101;&#105;&#x63;&#97;i1&#50;&#51;&#x38;&#64;&#103;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#x73;&#x68;i&#x64;&#x65;i&#x63;&#x61;&#x69;&#x31;&#50;&#x33;&#x38;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#109;</a>,
+dfadfmnakdfdfadf
+ddafsdddddddddddddddddddddddddddddd
+adsfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+<ul>
+<li>列表1</li>
+<li>列表3</li>
+<li>列表2</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<p>列表</p>
+<p>1</p>
+<p>2</p>
+</li>
+</ul>
+<p>作者：袁晓辉
+链接：https://www.zhihu.com/question/20409634/answer/40548752
+来源：知乎
+著作权归作者所有，转载请联系作者获得授权。</p>
+<h4>为啥要学：酷炫风吸引的技术小白</h4>
+<p>某次听讲座，看到前排的江浩博士拿出电脑记笔记，打开了一个一半是黑色，一般是白色的软件。在左边黑色的区域内打字，打字的过程中加几个简单的符号，所在行的文字立马变成了明快的彩色。更神奇的是，在右侧白色区域中呈现出大小标题十分清晰的结构化文字。当时心想，这也太酷炫了吧。</p>
+<blockquote>
+<p>『啥时候我也要这么酷炫地记笔记！』</p>
+</blockquote>
+<p>之后跟@果说的奇异果打听这是啥软件，他说，那就是之前给你推荐的Markdown语言啊。哦，Markdown，听起来好高端，是不是也像Python、C啥的，也是一种编程语言呢？一定也不太好学吧。</p>
+<p>要学习新东西，总觉得需要克服重重困难并且付出巨大的努力才行，于是借口要准备答辩，时间不充裕，就没有马上学起。</p>
+<p>今年1月6号，答辩完整理电脑里的文件，想起了记忆中那个图景。现在有时间了，没理由不学了，那就试试看吧。</p>
+<p>于是在维基百科上了解了Markdown的理念和语法，装上了一个叫Mou编辑器。打开一看，对！要的就是这种酷炫的感觉！</p>
+<p>研究了一下才发现，Markdown的语法相当简单，一小会儿的功夫，常用的格式处理语法就都试了一遍。神奇的写作体验就此开始。之后的年终总结、演讲稿、生活随笔、论文思路都开始用Markdown来写了，真是爱不释手。</p>
+<h4>Markdown到底是个啥？</h4>
+<p>引用[维基百科markdown][1]上的说明，我们来看看它到底有什么好？</p>
+<p>Markdown是一种轻量级标记语言，创始人为John Gruber。它允许人们『使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML或HTML文档』</p>
+<p>站在技术外行的角度简单理解，就是以最少的输入代价，呈现出结构化且富于表现力的文档。写着舒心，看着顺心。</p>
+<p>我根据自己的体验总结了用该语言写作的几个好处：</p>
+<ul>
+<li>结构写作：通过格式标记有助于理清思路</li>
+<li>语法简单：简单的几个符号，试一次就可以记住</li>
+<li>格式优雅：呈现出来的文字排版格式简洁好看</li>
+<li>引用方便：插入超链接很方便，再也不担心找不到出处</li>
+<li>写作专注：写作时关注内容即可，可开启过瘾的打字机声音</li>
+<li>容易分享：可导出HTML和PDF文件，随处都可打开</li>
+</ul>
+<h4>与Txt和Word相比呢？</h4>
+<p>大多数情况下，我们写东西要么用Word，要么用Txt记事本，跟Markdown相比，这两者的问题在哪呢？</p>
+<ul>
+<li>Txt：没有格式，顺序写作，结构化不足，写出来的东西所有格式都一样。</li>
+<li>Word：有格式，但鼠标键盘点来点去容易为格式所累，无法专注于写作的内容本身。</li>
+</ul>
+<p>而用Markdown来写东西，既有用Txt写作的简洁感，也有用Word刷格式后呈现的排版效果，而且是通过简洁的标记符号就产生了丰富的排版效果。这种感觉只有在上手用过一次以后才能了解奇妙之处。</p>
+<p>我们常说，有什么样的思路，就会写出什么样的东西；但我后来发现，写作的呈现结果其实对写作思路的影响也很大：</p>
+<ul>
+<li>如果写出的内容是清晰的结构化的，那么思路也会愈发清晰；</li>
+<li>如果写出的内容是线性的非结构化的，那么思路很容易陷入某个细节中。</li>
+</ul>
+<p>还记得思维导图吗？如果能够把脑海中的很多思绪用思维导图的方式梳理和串联起来，那么我们会发现思路在输出的过程中一点一点变清晰的。</p>
+<h4>Markdown语法好记吗？</h4>
+<p>它不是编程语言，很简单，一学就会，一用就灵。</p>
+<p>常用的几个语法：</p>
+<ol>
+<li><strong>大标题小标题</strong>：几个#号几级标题。如一个井号是一级标题，四个井号是四级标题。</li>
+<li><strong>加粗和斜体</strong>：几对*号斜粗体。一对星号是斜体，两对星号是加粗。</li>
+<li><strong>引用别人的话</strong>：一个&gt;号变引用。即可呈现出灰色底色引用的效果。</li>
+<li><strong>引用链接</strong>：方括号里超链接。[需要引用的话][标识码]然后把标识码对应的链接附在文后：[标识码]：http://... 或者[需要引用的话]后面紧跟括号，括号里是对应的链接。</li>
+<li><strong>插入表格</strong>：|号表示分割线。表格从此想怎么画怎么画。</li>
+<li><strong>缩进黑点对齐</strong>：一个*号点缩进。呈现黑点引导的对齐效果。</li>
+<li><strong>缩进数字对齐</strong>：数字圆点数缩进。呈现数字引导的对齐效果。</li>
+<li><strong>插入高亮代码</strong>：三个`号插代码。插入一段高亮代码。</li>
+<li><strong>插入分隔线</strong>：三个*号分隔线。分隔线就是这么简单。</li>
+</ol>
+<p>以上基本就是常用的语法了，可以在Markdown编辑器里试试看，半小时应该就能熟练掌握。</p>
+<p>这些语法记不住咋办？记性不好如我者，时不时打开工具文档再看看呗，重复几次，肯定就没问题了。</p>
+<h4>用什么软件？</h4>
+<p>Markdown是一种语言，要用Markdown语言写作，一般来说需要一个作为编辑器的软件。</p>
+<ul>
+<li>如果上网方便想先试试的话，可以先不安装编辑器，直接试试作业部落或简书的Web端，网址是Cmd Markdown 编辑阅读器，复制到浏览器中，打开即可上手来写了。</li>
+<li>如果已经决定要长期使用，不妨在本地安装Markdown的编辑器，Mac系统推荐一个叫Mou的编辑器，亲测一个月，好使。Windows系统推荐MarkdownPad或者MarkPad吧，没用过，但可以试试看。</li>
+<li>如果决定全面Markdown，那么马克飞象这个软件推荐给印象笔记的用户，可以直接写完以后同步到笔记中哦。</li>
+</ul>
+<p>这些编辑器的首页应该都是详细的介绍和语法说明。心动不如行动啦。</p>
+<h4>用Markdown搞定微信公众号的排版</h4>
+<p>如果你也有一个微信公众号，只要提前装好一个插件，那么用Markdown写作的文章可以直接粘在正文区，转换一下，即可呈现丰富的格式。从此告别公众号文章的low格式和模板格式时代。</p>
+<p>用Markdown写作的作者们直接写好确认好格式，不用再经历小编们的一道修理，就可以以原汁原味的形态，优雅地呈现于读者面前了。小编们也可以从排版的痛苦中解放出来啦。</p>
+<p>用Markdown来实现微信公众号的排版包括以下几步：</p>
+<ol>
+<li>装chrome浏览器中安装Markdown here插件，需要翻墙；</li>
+<li>把用Markdown写作的文章复制过来，粘在微信后台的文本框中；</li>
+<li>按住Control+Alt+M，即可转换成最终呈现出来的文字格式；</li>
+<li>可以进一步调整文字的颜色，插入图片等。</li>
+</ol>
+<p>这样出来的文章，保准比之前看起来上了一个档次哦。</p>
+<h4>有了好用的工具，会不会爱上写作呢？</h4>
+<p><strong>要爱上写作，关键还是得写起来。</strong></p>
+<p>那么如何克服心理障碍开始写作呢？来自问自答几个问题。</p>
+<ul>
+<li>想等到想得特别成熟才动笔开始写？放弃吧，不开始写作，我们永远想不成熟的；</li>
+<li>怕露怯，怕不完美？放弃吧，有谁是完美的呢？列一个出来？</li>
+<li>想到啥写啥不会太low吗？没有low，哪有high？大师都说了，好文章是改出来的，我们首先也得有能改的东西啊。</li>
+<li>千头万绪，没想清楚就写，会不会不太好？当脑海中信息太多的时候，以写作的方式释放出来一些，让那些没有头绪的思想呈现在纸上，我们才有可能理顺他们，才能给大脑留出足够的空间关注最核心的问题吧。</li>
+</ul>
+<p>好啦，开始带着Markdown的祝福，愉快地写起来吧。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
