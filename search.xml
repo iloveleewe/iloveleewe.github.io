@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title></title>
+      <url>http://yoursite.com/2016/08/02/myfirstpost/</url>
+      <content type="html"><![CDATA[<h4 id="为啥要学：酷炫风吸引的技术小白"><a href="#为啥要学：酷炫风吸引的技术小白" class="headerlink" title="为啥要学：酷炫风吸引的技术小白"></a>为啥要学：酷炫风吸引的技术小白</h4><p>某次听讲座，看到前排的江浩博士拿出电脑记笔记，打开了一个一半是黑色，一般是白色的软件。在左边黑色的区域内打字，打字的过程中加几个简单的符号，所在行的文字立马变成了明快的彩色。更神奇的是，在右侧白色区域中呈现出大小标题十分清晰的结构化文字。当时心想，这也太酷炫了吧。</p>
+<blockquote>
+<p>『啥时候我也要这么酷炫地记笔记！』</p>
+</blockquote>
+<p>之后跟@果说的奇异果打听这是啥软件，他说，那就是之前给你推荐的Markdown语言啊。哦，Markdown，听起来好高端，是不是也像Python、C啥的，也是一种编程语言呢？一定也不太好学吧。</p>
+<p>要学习新东西，总觉得需要克服重重困难并且付出巨大的努力才行，于是借口要准备答辩，时间不充裕，就没有马上学起。</p>
+<p>今年1月6号，答辩完整理电脑里的文件，想起了记忆中那个图景。现在有时间了，没理由不学了，那就试试看吧。</p>
+<p>于是在维基百科上了解了Markdown的理念和语法，装上了一个叫Mou编辑器。打开一看，对！要的就是这种酷炫的感觉！</p>
+<p>研究了一下才发现，Markdown的语法相当简单，一小会儿的功夫，常用的格式处理语法就都试了一遍。神奇的写作体验就此开始。之后的年终总结、演讲稿、生活随笔、论文思路都开始用Markdown来写了，真是爱不释手。</p>
+<h4 id="Markdown到底是个啥？"><a href="#Markdown到底是个啥？" class="headerlink" title="Markdown到底是个啥？"></a>Markdown到底是个啥？</h4><p>引用[维基百科markdown][1]上的说明，我们来看看它到底有什么好？</p>
+<p>Markdown是一种轻量级标记语言，创始人为John Gruber。它允许人们『使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML或HTML文档』</p>
+<p>站在技术外行的角度简单理解，就是以最少的输入代价，呈现出结构化且富于表现力的文档。写着舒心，看着顺心。</p>
+<p>我根据自己的体验总结了用该语言写作的几个好处：</p>
+<ul>
+<li>结构写作：通过格式标记有助于理清思路</li>
+<li>语法简单：简单的几个符号，试一次就可以记住</li>
+<li>格式优雅：呈现出来的文字排版格式简洁好看</li>
+<li>引用方便：插入超链接很方便，再也不担心找不到出处</li>
+<li>写作专注：写作时关注内容即可，可开启过瘾的打字机声音</li>
+<li>容易分享：可导出HTML和PDF文件，随处都可打开</li>
+</ul>
+<h4 id="与Txt和Word相比呢？"><a href="#与Txt和Word相比呢？" class="headerlink" title="与Txt和Word相比呢？"></a>与Txt和Word相比呢？</h4><p>大多数情况下，我们写东西要么用Word，要么用Txt记事本，跟Markdown相比，这两者的问题在哪呢？</p>
+<ul>
+<li>Txt：没有格式，顺序写作，结构化不足，写出来的东西所有格式都一样。</li>
+<li>Word：有格式，但鼠标键盘点来点去容易为格式所累，无法专注于写作的内容本身。</li>
+</ul>
+<p>而用Markdown来写东西，既有用Txt写作的简洁感，也有用Word刷格式后呈现的排版效果，而且是通过简洁的标记符号就产生了丰富的排版效果。这种感觉只有在上手用过一次以后才能了解奇妙之处。</p>
+<p>我们常说，有什么样的思路，就会写出什么样的东西；但我后来发现，写作的呈现结果其实对写作思路的影响也很大：</p>
+<ul>
+<li>如果写出的内容是清晰的结构化的，那么思路也会愈发清晰；</li>
+<li>如果写出的内容是线性的非结构化的，那么思路很容易陷入某个细节中。</li>
+</ul>
+<p>还记得思维导图吗？如果能够把脑海中的很多思绪用思维导图的方式梳理和串联起来，那么我们会发现思路在输出的过程中一点一点变清晰的。</p>
+<h4 id="Markdown语法好记吗？"><a href="#Markdown语法好记吗？" class="headerlink" title="Markdown语法好记吗？"></a>Markdown语法好记吗？</h4><p>它不是编程语言，很简单，一学就会，一用就灵。</p>
+<p>常用的几个语法：</p>
+<ol>
+<li><strong>大标题小标题</strong>：几个#号几级标题。如一个井号是一级标题，四个井号是四级标题。</li>
+<li><strong>加粗和斜体</strong>：几对*号斜粗体。一对星号是斜体，两对星号是加粗。</li>
+<li><strong>引用别人的话</strong>：一个&gt;号变引用。即可呈现出灰色底色引用的效果。</li>
+<li><strong>引用链接</strong>：方括号里超链接。[需要引用的话][标识码]然后把标识码对应的链接附在文后：[标识码]：http://… 或者[需要引用的话]后面紧跟括号，括号里是对应的链接。</li>
+<li><strong>插入表格</strong>：|号表示分割线。表格从此想怎么画怎么画。</li>
+<li><strong>缩进黑点对齐</strong>：一个*号点缩进。呈现黑点引导的对齐效果。</li>
+<li><strong>缩进数字对齐</strong>：数字圆点数缩进。呈现数字引导的对齐效果。</li>
+<li><strong>插入高亮代码</strong>：三个`号插代码。插入一段高亮代码。</li>
+<li><strong>插入分隔线</strong>：三个*号分隔线。分隔线就是这么简单。</li>
+</ol>
+<p>以上基本就是常用的语法了，可以在Markdown编辑器里试试看，半小时应该就能熟练掌握。</p>
+<p>这些语法记不住咋办？记性不好如我者，时不时打开工具文档再看看呗，重复几次，肯定就没问题了。</p>
+<h4 id="用什么软件？"><a href="#用什么软件？" class="headerlink" title="用什么软件？"></a>用什么软件？</h4><p>Markdown是一种语言，要用Markdown语言写作，一般来说需要一个作为编辑器的软件。</p>
+<ul>
+<li>如果上网方便想先试试的话，可以先不安装编辑器，直接试试作业部落或简书的Web端，网址是Cmd Markdown 编辑阅读器，复制到浏览器中，打开即可上手来写了。</li>
+<li>如果已经决定要长期使用，不妨在本地安装Markdown的编辑器，Mac系统推荐一个叫Mou的编辑器，亲测一个月，好使。Windows系统推荐MarkdownPad或者MarkPad吧，没用过，但可以试试看。</li>
+<li>如果决定全面Markdown，那么马克飞象这个软件推荐给印象笔记的用户，可以直接写完以后同步到笔记中哦。</li>
+</ul>
+<p>这些编辑器的首页应该都是详细的介绍和语法说明。心动不如行动啦。</p>
+<h4 id="用Markdown搞定微信公众号的排版"><a href="#用Markdown搞定微信公众号的排版" class="headerlink" title="用Markdown搞定微信公众号的排版"></a>用Markdown搞定微信公众号的排版</h4><p>如果你也有一个微信公众号，只要提前装好一个插件，那么用Markdown写作的文章可以直接粘在正文区，转换一下，即可呈现丰富的格式。从此告别公众号文章的low格式和模板格式时代。</p>
+<p>用Markdown写作的作者们直接写好确认好格式，不用再经历小编们的一道修理，就可以以原汁原味的形态，优雅地呈现于读者面前了。小编们也可以从排版的痛苦中解放出来啦。</p>
+<p>用Markdown来实现微信公众号的排版包括以下几步：</p>
+<ol>
+<li>装chrome浏览器中安装Markdown here插件，需要翻墙；</li>
+<li>把用Markdown写作的文章复制过来，粘在微信后台的文本框中；</li>
+<li>按住Control+Alt+M，即可转换成最终呈现出来的文字格式；</li>
+<li>可以进一步调整文字的颜色，插入图片等。</li>
+</ol>
+<p>这样出来的文章，保准比之前看起来上了一个档次哦。</p>
+<h4 id="有了好用的工具，会不会爱上写作呢？"><a href="#有了好用的工具，会不会爱上写作呢？" class="headerlink" title="有了好用的工具，会不会爱上写作呢？"></a>有了好用的工具，会不会爱上写作呢？</h4><p><strong>要爱上写作，关键还是得写起来。</strong></p>
+<p>那么如何克服心理障碍开始写作呢？来自问自答几个问题。</p>
+<ul>
+<li>想等到想得特别成熟才动笔开始写？放弃吧，不开始写作，我们永远想不成熟的；</li>
+<li>怕露怯，怕不完美？放弃吧，有谁是完美的呢？列一个出来？</li>
+<li>想到啥写啥不会太low吗？没有low，哪有high？大师都说了，好文章是改出来的，我们首先也得有能改的东西啊。</li>
+<li>千头万绪，没想清楚就写，会不会不太好？当脑海中信息太多的时候，以写作的方式释放出来一些，让那些没有头绪的思想呈现在纸上，我们才有可能理顺他们，才能给大脑留出足够的空间关注最核心的问题吧。</li>
+</ul>
+<p>好啦，开始带着Markdown的祝福，愉快地写起来吧。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>http://yoursite.com/2016/08/02/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
