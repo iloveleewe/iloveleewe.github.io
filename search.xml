@@ -6,28 +6,7 @@
     <entry>
       <title><![CDATA[Share]]></title>
       <url>http://yoursite.com/2016/08/02/Future/</url>
-      <content type="html"><![CDATA[<h4 id="为啥要学：酷炫风吸引的技术小白"><a href="#为啥要学：酷炫风吸引的技术小白" class="headerlink" title="为啥要学：酷炫风吸引的技术小白"></a>为啥要学：酷炫风吸引的技术小白</h4><p>某次听讲座，看到前排的江浩博士拿出电脑记笔记，打开了一个一半是黑色，一般是白色的软件。在左边黑色的区域内打字，打字的过程中加几个简单的符号，所在行的文字立马变成了明快的彩色。更神奇的是，在右侧白色区域中呈现出大小标题十分清晰的结构化文字。当时心想，这也太酷炫了吧。</p>
-<a id="more"></a>
-<blockquote>
-<p>『啥时候我也要这么酷炫地记笔记！』</p>
-</blockquote>
-<p>之后跟@果说的奇异果打听这是啥软件，他说，那就是之前给你推荐的Markdown语言啊。哦，Markdown，听起来好高端，是不是也像Python、C啥的，也是一种编程语言呢？一定也不太好学吧。</p>
-<p>要学习新东西，总觉得需要克服重重困难并且付出巨大的努力才行，于是借口要准备答辩，时间不充裕，就没有马上学起。</p>
-<p>今年1月6号，答辩完整理电脑里的文件，想起了记忆中那个图景。现在有时间了，没理由不学了，那就试试看吧。</p>
-<p>于是在维基百科上了解了Markdown的理念和语法，装上了一个叫Mou编辑器。打开一看，对！要的就是这种酷炫的感觉！</p>
-<p>研究了一下才发现，Markdown的语法相当简单，一小会儿的功夫，常用的格式处理语法就都试了一遍。神奇的写作体验就此开始。之后的年终总结、演讲稿、生活随笔、论文思路都开始用Markdown来写了，真是爱不释手。</p>
-<h4 id="Markdown到底是个啥？"><a href="#Markdown到底是个啥？" class="headerlink" title="Markdown到底是个啥？"></a>Markdown到底是个啥？</h4><p>引用[维基百科markdown][1]上的说明，我们来看看它到底有什么好？</p>
-<p>Markdown是一种轻量级标记语言，创始人为John Gruber。它允许人们『使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML或HTML文档』</p>
-<p>站在技术外行的角度简单理解，就是以最少的输入代价，呈现出结构化且富于表现力的文档。写着舒心，看着顺心。</p>
-<p>我根据自己的体验总结了用该语言写作的几个好处：</p>
-<ul>
-<li>结构写作：通过格式标记有助于理清思路</li>
-<li>语法简单：简单的几个符号，试一次就可以记住</li>
-<li>格式优雅：呈现出来的文字排版格式简洁好看</li>
-<li>引用方便：插入超链接很方便，再也不担心找不到出处</li>
-<li>写作专注：写作时关注内容即可，可开启过瘾的打字机声音</li>
-<li>容易分享：可导出HTML和PDF文件，随处都可打开</li>
-</ul>
+      <content type="html"><![CDATA[<p>I wanna back~~</p>
 ]]></content>
     </entry>
     
@@ -59,36 +38,6 @@
 </code></pre><h3 id="DNS设置"><a href="#DNS设置" class="headerlink" title="DNS设置"></a>DNS设置</h3><p>用DNSpod，快，免费，稳定。注册DNSpod，添加域名，如下图设置。<br><img src="http://obb96ou6l.bkt.clouddn.com/2016-08-03-15-43-52.png" alt=""> </p>
 <p>其中需要A记录和CNAME记录线路类型都是默认值，记录值都是你的Github域名，其他默认，主机类型分别是@和WWW<br>有网友指出在A记录应该是Github Pages提供的IP，分别是192.30.252.153和192.30.252.154，如博客不能登录，有可能是github更改了空间服务的ip地址，记得及时到在GitHub Pages查看最新的ip即可！我没有验证，不知道是否正确。</p>
 <h1 id="未完待续…"><a href="#未完待续…" class="headerlink" title="未完待续…."></a>未完待续….</h1>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[试一试]]></title>
-      <url>http://yoursite.com/2016/08/02/%E8%A5%BF%E5%8D%8E/</url>
-      <content type="html"><![CDATA[<h1 id="瞎折腾之Github-Hexo-Next建独立博客"><a href="#瞎折腾之Github-Hexo-Next建独立博客" class="headerlink" title="瞎折腾之Github+Hexo+Next建独立博客"></a>瞎折腾之Github+Hexo+Next建独立博客</h1><p>前段时间入手了DO的虚拟VPS，主要是为了当做梯子用，毕竟国内的网络环境堪忧啊，加之需要时不时的查找国外的文献和看一些时事美剧，所以毫不犹豫的入手了！在整个搭建VPS的过程中，意外收获就是Paypal，这样的工具或者说这样的公司是值得尊敬的：非常奈斯的客服服务，非常人性化的促销方式，非常好的企业文化和非常好国内人缘！同时，知道了VI和VIM工具的使用，想想也是非常的反人类啊，各种指令忙个不停；Ubuntu照样的那样让我着迷，只是奈何不了你！</p>
-<p>心血来潮，想自己建一个属于自己的博客，于是开始了Github+Hexo+Next之路，注定一条“平凡之路”….</p>
-<a id="more"></a>
-<h2 id="安装准备软件"><a href="#安装准备软件" class="headerlink" title="安装准备软件"></a>安装准备软件</h2><ul>
-<li>1.Node.js</li>
-<li>2.Git</li>
-</ul>
-<p>严格意义上算起来，这是我第一次接触GitHub，难免有很多不熟悉的地方！首先是在官网上去注册。注册的username和邮箱，邮箱十分重要，GitHub上很多通知都是通过邮箱的。然后就是配置和使用Github，其中包括：新建自己博客的仓库，下载Git客户端，下载Hexo并克隆主题等。</p>
-<p>传送门：</p>
-<ul>
-<li>Github官网：<a href="http://www.github.com/" title="Github" target="_blank" rel="external">http://www.github.com/</a></li>
-<li>使用Github Pages建独立博客：<a href="http://beiyuu.com/github-pages" target="_blank" rel="external">http://beiyuu.com/github-pages</a></li>
-</ul>
-<h2 id="独立域名购买和解析"><a href="#独立域名购买和解析" class="headerlink" title="独立域名购买和解析"></a>独立域名购买和解析</h2><p>接下来就是去“购买”域名了，学生党穷，没钱慌啊，果断入手免费域名来练手。悉知原来大名鼎鼎的Tk域名代理商被收购了，被一家叫Feeenom的公司收购，在Freenom申请TK,ML,GA,CF免费顶级域名有两个关键点：一是用DL，否则在创建Freenom账号时不能成功；二是用自己的DNS服务器，或者使用不常用的DNS服务器，否则直接使用DNSPod的DNS服务器会提示不符合要求。做到这两点基本上就可以成功注册到域名了。下面是具体步骤：</p>
-<p>一、Freenom注册域名和创建账号</p>
-<p>二、Freenom快速注册域名</p>
-<p>三、Freenom使用自己的DNS服务器</p>
-<p>四、Freenom免费域名使用DNSPod解析域名</p>
-<p>详细教程见：<a href="https://www.freehao123.com/freenom-tk-ml-ga-cf/" title="Freenom使用教程传送门" target="_blank" rel="external">https://www.freehao123.com/freenom-tk-ml-ga-cf/</a></p>
-<h2 id="将独立域名与GitHub-Pages的空间绑定"><a href="#将独立域名与GitHub-Pages的空间绑定" class="headerlink" title="将独立域名与GitHub Pages的空间绑定"></a>将独立域名与GitHub Pages的空间绑定</h2><h3 id="GitHub-Pages的设置"><a href="#GitHub-Pages的设置" class="headerlink" title="GitHub Pages的设置"></a>GitHub Pages的设置</h3><p>方法一：在Repository的根目录下面，新建一个名为CNAME的文本文件，里面写入你要绑定的域名，比如cnfeat.com，加不加www其实不太重要。</p>
-<p>方法二：到我的Github仓库，点击右下角的「Download ZIP」，下载源文件，解压，找到CNAME文件，用记事本打开，将cnfeat.com修改成你的域名，加不加www其实不太重要。放进Hexo\source目录下，用hexo命令提交上去。</p>
-<pre><code>hexo d -g
-</code></pre><h3 id="DNS设置"><a href="#DNS设置" class="headerlink" title="DNS设置"></a>DNS设置</h3><p>用DNSpod，快，免费，稳定。注册DNSpod，添加域名，如下图设置。<br><img src="http://obb96ou6l.bkt.clouddn.com/2016-08-03-15-43-52.png" alt=""> </p>
-<p>其中需要A记录和CNAME记录线路类型都是默认值，记录值都是你的Github域名，其他默认，主机类型分别是@和WWW<br>有网友指出在A记录应该是Github Pages提供的IP，分别是192.30.252.153和192.30.252.154，如博客不能登录，有可能是github更改了空间服务的ip地址，记得及时到在GitHub Pages查看最新的ip即可！我没有验证，不知道是否正确。</p>
-<h1 id="未完待续…"><a href="#未完待续…" class="headerlink" title="未完待续…."></a>未完待续….</h1><h1 id="未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…"><a href="#未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…-未完待续…" class="headerlink" title="未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续…."></a>未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….# 未完待续….</h1>]]></content>
     </entry>
     
     <entry>
