@@ -84,16 +84,35 @@
 
 
 
-<meta name="description" content="I wanna back~~">
+<meta name="description" content="I wanna back~~
+相机标定的若干问题一、.结果是否满足实际需要？ 某同学采用Matlab的 Toolbox标定相机，一共40张图片，出去了10张重投影误差很大的图片，同时在标定时固定了相机和避免平面板模糊，也固定了焦距结果如下
+答题者提示一下几点：
+
+确保相机固定和平面的平整性，最好是把标定板固定在铁质或者木板面上。
+为了验证标定的精度，可以实际采用测量一个已知物体的长度，测量值与实际">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Share">
 <meta property="og:url" content="http://yoursite.com/2016/08/02/Future/index.html">
 <meta property="og:site_name" content="ReneeMe">
-<meta property="og:description" content="I wanna back~~">
-<meta property="og:updated_time" content="2016-08-03T13:12:21.327Z">
+<meta property="og:description" content="I wanna back~~
+相机标定的若干问题一、.结果是否满足实际需要？ 某同学采用Matlab的 Toolbox标定相机，一共40张图片，出去了10张重投影误差很大的图片，同时在标定时固定了相机和避免平面板模糊，也固定了焦距结果如下
+答题者提示一下几点：
+
+确保相机固定和平面的平整性，最好是把标定板固定在铁质或者木板面上。
+为了验证标定的精度，可以实际采用测量一个已知物体的长度，测量值与实际">
+<meta property="og:image" content="http://obb96ou6l.bkt.clouddn.com/2016-08-05-19-20-52.png">
+<meta property="og:image" content="http://obb96ou6l.bkt.clouddn.com/2016-08-05-19-21-40.png">
+<meta property="og:image" content="http://obb96ou6l.bkt.clouddn.com/2016-08-05-19-22-33.png">
+<meta property="og:updated_time" content="2016-08-05T11:24:16.916Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Share">
-<meta name="twitter:description" content="I wanna back~~">
+<meta name="twitter:description" content="I wanna back~~
+相机标定的若干问题一、.结果是否满足实际需要？ 某同学采用Matlab的 Toolbox标定相机，一共40张图片，出去了10张重投影误差很大的图片，同时在标定时固定了相机和避免平面板模糊，也固定了焦距结果如下
+答题者提示一下几点：
+
+确保相机固定和平面的平整性，最好是把标定板固定在铁质或者木板面上。
+为了验证标定的精度，可以实际采用测量一个已知物体的长度，测量值与实际">
+<meta name="twitter:image" content="http://obb96ou6l.bkt.clouddn.com/2016-08-05-19-20-52.png">
 
 
 
@@ -347,6 +366,29 @@
 
       
         <p>I wanna back~~</p>
+<h1 id="相机标定的若干问题"><a href="#相机标定的若干问题" class="headerlink" title="相机标定的若干问题"></a>相机标定的若干问题</h1><h3 id="一、-结果是否满足实际需要？"><a href="#一、-结果是否满足实际需要？" class="headerlink" title="一、.结果是否满足实际需要？"></a>一、.结果是否满足实际需要？</h3><p> 某同学采用Matlab的 Toolbox标定相机，一共40张图片，出去了10张重投影误差很大的图片，同时在标定时固定了相机和避免平面板模糊，也固定了焦距结果如下</p>
+<p>答题者提示一下几点：</p>
+<ul>
+<li>确保相机固定和平面的平整性，最好是把标定板固定在铁质或者木板面上。</li>
+<li>为了验证标定的精度，可以实际采用测量一个已知物体的长度，测量值与实际值进行对比。</li>
+<li>很重要的一点，标定时需要标定整个空间，也就是说我的目标物体测量的范围应该是我标定的空间，即在标定的空间范围内测量。</li>
+<li>3D的标定物是最好的，3D的标定物替代平面标定板能得到更好的精度，但是目前没有相关的代码实现。</li>
+</ul>
+<p> 传送门：</p>
+<p><a href="http://stackoverflow.com/questions/27284019/camera-calibration-results-sufficient" target="_blank" rel="external">http://stackoverflow.com/questions/27284019/camera-calibration-results-sufficient</a><br> <a href="http://stackoverflow.com/questions/12794876/how-to-verify-the-correctness-of-calibration-of-a-webcam/12821056#12821056" target="_blank" rel="external">http://stackoverflow.com/questions/12794876/how-to-verify-the-correctness-</a></p>
+<h3 id="二、-怎样提高标定的精度？"><a href="#二、-怎样提高标定的精度？" class="headerlink" title="二、.怎样提高标定的精度？"></a>二、.怎样提高标定的精度？</h3><ul>
+<li>修改标定设置，采用3个径向畸变系数去畸变矫正。</li>
+<li>采集更多的图像，标定板必须在不同的3维平面，覆盖所有的视野，重要的是角点分布在图像的边缘和图像的角落可以得到更好的畸变系数。</li>
+<li>排除高的重投影误差图像，然后再重新标定.</li>
+</ul>
+<h3 id="三、如何去评估单相机标定的精度？"><a href="#三、如何去评估单相机标定的精度？" class="headerlink" title="三、如何去评估单相机标定的精度？"></a>三、如何去评估单相机标定的精度？</h3><ul>
+<li>画出相机和标定板的相对位姿图。</li>
+<li>计算重投影误差</li>
+<li>计算参数的估计误差</li>
+</ul>
+<p>其中参数的估计误差可以有：</p>
+<p>主点的估计误差：<img src="http://obb96ou6l.bkt.clouddn.com/2016-08-05-19-20-52.png" alt=""><br>平移矩阵估计误差：<img src="http://obb96ou6l.bkt.clouddn.com/2016-08-05-19-21-40.png" alt=""><br>旋转矩阵估计误差：<img src="http://obb96ou6l.bkt.clouddn.com/2016-08-05-19-22-33.png" alt=""> </p>
+<p>传送门：<a href="http://cn.mathworks.com/help/vision/examples/evaluating-the-accuracy-of-single-camera-calibration.html" title="Evaluating the Accuracy of Single Camera Calibration" target="_blank" rel="external">http://cn.mathworks.com/help/vision/examples/</a></p>
 
       
     </div>
@@ -385,6 +427,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/05/奥运会/" rel="prev" title="里约奥运会有哪些值得熬夜观看的比赛">
+                里约奥运会有哪些值得熬夜观看的比赛 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -456,7 +502,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -466,7 +512,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -551,7 +597,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#相机标定的若干问题"><span class="nav-number">1.</span> <span class="nav-text">相机标定的若干问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、-结果是否满足实际需要？"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、.结果是否满足实际需要？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、-怎样提高标定的精度？"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、.怎样提高标定的精度？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、如何去评估单相机标定的精度？"><span class="nav-number">1.0.3.</span> <span class="nav-text">三、如何去评估单相机标定的精度？</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
